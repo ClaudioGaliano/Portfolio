@@ -1,0 +1,147 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comfortaa', sans-serif;
+    color: white;
+}
+
+nav {
+    padding: 2em 5em 0 5em;
+    display: flex;
+    justify-content: space-between;
+    background-color: #19142a;
+}
+
+.nav__link a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav__link a:nth-child(2) {
+    padding: 0 2em;
+}
+
+.info {
+    padding: 5em;
+    background-color: #19142a;
+    display: flex;
+    /* background-image: url("../img/undraw_absorbed_in_re_ymd6.svg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.intro {
+    line-height: 1.2em;
+    margin: 2em 0;
+}
+
+.portfolio-section {
+    padding: 2em 0;
+    background-color: #2a2344;
+    padding: 5em;
+}
+
+.portfolio-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-info div:first-child {
+    width: 30%;
+}
+
+.button {
+    padding: 0.5em 2em;
+    color: white;
+    background-color: #d6223b;
+    border: none;
+    font-family: 'Comfortaa', sans-serif;
+}
+  
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 10px;
+    margin-top: 2em;
+}
+  
+.image-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+h1 {
+    margin: 0.5em 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #19142a;
+    color: #fff;
+    padding: 5em;
+}
+  
+.contact-info {
+    width: 48%;
+}
+  
+.contact-form {
+    width: 48%;
+}
+
+.contact-mine {
+margin-top: 2em;
+}
+
+.contact-mine div:nth-child(2) {
+    margin: 2em 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.contact-form form div:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+
+.contact-form form div:nth-child(2) {
+    display: flex;
+}
+  
+.contact-form form input[type="text"],
+.contact-form form input[type="email"] {
+    width: 48%;
+}
+  
+.contact-form form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.contact-form form input[type="submit"] {
+    background-color: red;
+    color: #fff;
+    border: none;
+    width: 20%;
+}
+
+footer {
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+    background-color: #2a2344;
+}
