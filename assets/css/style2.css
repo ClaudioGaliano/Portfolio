@@ -10,6 +10,19 @@ body {
     background-color: #ffffff
 }
 
+html, body {
+    overflow-x: hidden; /* Nasconde lo slider orizzontale */
+    overflow-y: auto;   /* Mantiene lo scorrimento verticale automatico */
+    margin: 0;          /* Rimuove eventuali margini di default */
+    padding: 0;         /* Rimuove eventuali padding di default */
+}
+
+
+.upper {
+    text-transform: uppercase;
+}
+
+/* Navbar */
 nav {
     padding: 50px;
     display: flex;
@@ -73,20 +86,86 @@ nav div:last-child {
     color: black;
 }
 
+/* Introduzione */
 
 .info {
     padding: 5em;
-    display: flex;
     /* background-image: url("../img/undraw_absorbed_in_re_ymd6.svg");
     background-repeat: no-repeat;
     background-size: cover; */
 }
 
 .intro {
-    line-height: 1.2em;
-    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
 }
 
+.intro .titolo {
+    font-size: 4em;
+}
+
+
+/* Profilo */
+
+.profilo {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.titoletto {
+    color: #999999;
+    font-size: 15px;
+    padding-bottom: 3em;
+}
+
+
+.left-col {
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+    justify-content: center;
+    width: 100%;
+}
+
+.right-col {
+    align-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    width: 100%;
+}
+
+.foto {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    width: 60%;
+}
+
+
+.text-big {
+    align-items: left;
+    font-size: 80px;
+    font-family: "Amiri", "Amiri Placeholder", serif;
+    font-weight: 400;
+}
+
+.text-profilo {
+    font-family: 'Amiri';
+    font-size: 24px;
+    line-height: 1.5em
+}
+
+/* Portfolio */
 .portfolio-section {
     padding: 2em 0;
     padding: 5em;
@@ -124,9 +203,7 @@ nav div:last-child {
 }
 
 h1 {
-    margin: 0.5em 0;
     font-size: 3em;
-    font-weight: bold;
 }
 
 .contact-section {
@@ -194,47 +271,6 @@ footer {
 
 /* Carosello */
 
-/*
-.carousel {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-}
-
-.carousel-slide {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    gap: 10px;
-}
-.carousel-item {
-    min-width: calc(100% / 3);
-    box-sizing: border-box;
-    text-align: center;
-}
-.carousel-item img {
-    width: 100%;
-}
-.carousel-item p {
-    margin: 0;
-}
-.carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    cursor: pointer;
-}
-.carousel-arrow.prev {
-    left: 10px;
-}
-.carousel-arrow.next {
-    right: 10px;
-}
-
-*/
-
 .projects .titolo {
     display: flex;
     justify-content: center;
@@ -260,19 +296,65 @@ footer {
     font-size: 60px;
 }
 
-.carousel {
-    margin: 0 10em;
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative; /* Necessario per posizionare le frecce */
+    padding: 0 20px;
+    box-sizing: border-box; /* Assicura che padding e border non espandano la larghezza oltre il 100% */
+    overflow: visible; /* Assicura che gli elementi non vengano tagliati */
 }
 
-
-.carousel-slide {
+.swiper-slide {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
+
+.card {
+    background: #f3f3f3;
+    padding: 16px;
+    border-radius: 8px;
+    min-width: 200px;
+    max-width: 100%; /* Imposta una larghezza massima al 100% della larghezza del contenitore */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000; /* Assicura la sovrapposizione alle altre parti della pagina */
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    color: #000000;
+}
+
+
+.swiper-button-next {
+    right: 20px;
+}
+
+.swiper-button-prev {
+    left: 20px;
+}
+
 
 .img {
-    width: 30em;
-    height: 30em;
+    width: 25em;
+    height: 28em;
     object-fit: cover;
     margin-bottom: 3em;
+    max-width: 100%; /* Imposta una larghezza massima al 100% della larghezza del contenitore */
 }
+
