@@ -1,4 +1,3 @@
-
 html {
     scroll-behavior: smooth;
 }
@@ -126,19 +125,19 @@ nav div:last-child {
 
 .left-col {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
-    gap: 6em;
     justify-content: center;
+    gap: 6em;
     width: 100%;
 }
 
 .right-col {
-    align-content: flex-end;
-    align-items: flex-end;
     display: flex;
+    align-items: flex-end;
     flex-direction: column;
-    gap: 5px;
     justify-content: center;
+    gap: 6em;
     width: 100%;
 }
 
@@ -152,11 +151,14 @@ nav div:last-child {
 }
 
 
-.text-big {
-    align-items: left;
+.t-big {
     font-size: 80px;
     font-family: "Amiri", "Amiri Placeholder", serif;
     font-weight: 400;
+}
+
+.t-right {
+    text-align: right;
 }
 
 .text-profilo {
@@ -358,3 +360,16 @@ footer {
     max-width: 100%; /* Imposta una larghezza massima al 100% della larghezza del contenitore */
 }
 
+
+/* Animazioni */
+
+.hidden {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.6s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
