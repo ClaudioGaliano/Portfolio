@@ -23,13 +23,14 @@
   </head>
   <body>
     <!-- Navbar -->
+
     <nav>
-      <div class="nav__link">
-        <a href="#about">Home</a>
-        <a href="#portfolio">Book me</a>
-        <a href="#portfolio">Email</a>
-        <a href="#contatti">Download</a>
-      </div>
+      <ul class="nav__link">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Book me</a></li>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Download</a></li>
+      </ul>
       <div>
         <a href="#">Logo</a>
       </div>
@@ -53,35 +54,64 @@
     <div class="profilo">
       <div class="left-col">
         <div>
-          <p class="titoletto upper hidden">Biography</p>
-          <p class="text-profilo hidden">Work for money and design for love! I’m Claudio, Designer based in Italy.</h2>
+          <p id="bio" class="titoletto upper hidden">Biography</p>
+          <p id="bio-text" class="text-profilo hidden">
+            Work for money and design for love! I’m Claudio, Designer based in
+            Italy.
+          </p>
         </div>
         <div>
-          <p class="titoletto upper hidden">Contact</p>
-          <p class="text-profilo hidden">Monza, Italy hello@mail.com +39 3568 89 86</h2>
+          <p id="contact" class="titoletto upper hidden">Contact</p>
+          <p id="contact-text" class="text-profilo hidden">
+            Monza, Italy hello@mail.com +39 3568 89 86
+          </p>
         </div>
         <div>
-          <p class="titoletto upper hidden">Services</p>
-          <p class="text-profilo hidden">Website Design<br>Mobile Application Design<br>Animation</h2>
+          <p id="services" class="titoletto upper hidden">Services</p>
+          <p id="services-text" class="text-profilo hidden">
+            Website Design<br />Mobile Application Design<br />Animation
+          </p>
         </div>
       </div>
-      <!-- Immagine -->
       <div class="foto">
-        <img src="assets/img/foto.jpg" alt="Immagine 1" class="img" />
+        <img src="assets/img/foto.jpg" alt="Immagine 1" class="img-profilo" />
       </div>
-      <!-- Immagine -->
       <div class="right-col">
         <div>
-          <p class="titoletto upper t-right hidden">Years of<br>Experience</p>
-          <p class="t-big t-right hidden count-up" data-end="8">0</p>
+          <p id="experience" class="titoletto upper t-right hidden">
+            Years of<br />Experience
+          </p>
+          <p
+            id="experience-count"
+            class="t-big t-right hidden count-up"
+            data-end="8"
+          >
+            0
+          </p>
         </div>
         <div>
-          <p class="titoletto upper t-right hidden">Customer<br>satisfaction</p>
-          <p class="t-big t-right hidden count-up percent" data-end="100">0%</p>
+          <p id="satisfaction" class="titoletto upper t-right hidden">
+            Customer<br />satisfaction
+          </p>
+          <p
+            id="satisfaction-count"
+            class="t-big t-right hidden count-up percent"
+            data-end="100"
+          >
+            0%
+          </p>
         </div>
         <div>
-          <p class="titoletto upper t-right hidden">Projects done</p>
-          <p class="t-big t-right hidden count-up" data-end="30">0</p>
+          <p id="projects" class="titoletto upper t-right hidden">
+            Projects done
+          </p>
+          <p
+            id="projects-count"
+            class="t-big t-right hidden count-up"
+            data-end="30"
+          >
+            0
+          </p>
         </div>
       </div>
       <div class="background"></div>
@@ -95,30 +125,38 @@
           <div class="swiper-slide">
             <div class="card">
               <img src="assets/img/Weather.jpg" alt="Immagine 1" class="img" />
-              <p class="p2">Titolo per immagine 1</p>
-              <p class="p1">Supro Store Online</p>
+              <div class="card-desc">
+                <p class="p2">Titolo per immagine 1</p>
+                <p class="p1">Supro Store Online</p>
+              </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="card">
               <img src="assets/img/Weather.jpg" alt="Immagine 2" class="img" />
-              <p class="p2">Titolo per immagine 2</p>
-              <p class="p1">Altro Progetto</p>
+              <div class="card-desc">
+                <p class="p2">Titolo per immagine 2</p>
+                <p class="p1">Supro Store Online</p>
+              </div>
             </div>
           </div>
           <!-- Aggiungi altre card qui -->
           <div class="swiper-slide">
             <div class="card">
               <img src="assets/img/Weather.jpg" alt="Immagine 2" class="img" />
-              <p class="p2">Titolo per immagine 3</p>
-              <p class="p1">Altro Progetto</p>
+              <div class="card-desc">
+                <p class="p2">Titolo per immagine 3</p>
+                <p class="p1">Supro Store Online</p>
+              </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="card">
               <img src="assets/img/Weather.jpg" alt="Immagine 2" class="img" />
-              <p class="p2">Titolo per immagine 4</p>
-              <p class="p1">Altro Progetto</p>
+              <div class="card-desc">
+                <p class="p2">Titolo per immagine 4</p>
+                <p class="p1">Supro Store Online</p>
+              </div>
             </div>
           </div>
         </div>
@@ -247,3 +285,9 @@
     </script>
   </body>
 </html>
+
+<!-- autoplay: {
+  delay: 3000, // 3 secondi
+  disableOnInteraction: false, // Non continua anche se l'utente interagisce con il carosello
+},
+-->

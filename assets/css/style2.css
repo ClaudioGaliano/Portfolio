@@ -38,21 +38,6 @@ nav div:first-child {
     align-items: center;
     display: flex;
     flex: 1 0 0px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 50px;
-    height: min-content;
-    justify-content: flex-start;
-    overflow: hidden;
-    padding: 1px 0;
-    position: relative;
-    width: 1px;
-}
-
-nav div:nth-child(2) {
-    align-items: center;
-    display: flex;
-    flex: 1 0 0px;
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 0px;
@@ -79,11 +64,46 @@ nav div:last-child {
     width: 1px;
 }
 
+.nav__link {
+    display: flex;
+    list-style-type: none;
+    flex: 1 0 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 1em 0;
+    position: relative;
+    width: 1px;
+}
+
+.nav__link li {
+    position: relative;
+}
 
 .nav__link a {
+    display: inline-block; /* Aggiungi questa regola */
     text-decoration: none;
     color: black;
+    transition: transform 0.3s;
 }
+
+.nav__link a:hover {
+    transform: translateY(-5px);
+}
+
+.nav__link a:hover::after {
+    content: '•';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1em;
+    font-size: 1em;
+}
+
+
 
 /* Introduzione */
 
@@ -109,8 +129,6 @@ nav div:last-child {
 /* Profilo */
 
 .profilo {
-    align-content: center;
-    align-items: center;
     display: flex;
     justify-content: center;
     padding: 0 50px;
@@ -139,6 +157,14 @@ nav div:last-child {
     justify-content: center;
     gap: 6em;
     width: 100%;
+}
+
+.img-profilo {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    object-position: center;
 }
 
 .foto {
@@ -313,18 +339,42 @@ footer {
     align-items: center;
 }
 
+
 .card {
-    background: #f3f3f3;
-    padding: 16px;
-    border-radius: 8px;
-    min-width: 200px;
-    max-width: 100%; /* Imposta una larghezza massima al 100% della larghezza del contenitore */
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-top: 75%; /* Cambia questo valore per regolare le proporzioni */
 }
 
-.card img {
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    border-radius: 8px;
+    height: 100%;
+    transition: transform 0.3s ease;
+    object-fit: cover;
 }
+
+.img:hover {
+    transform: scale(1.1); /* Applica lo zoom */
+}
+
+.card-desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding-top: 3em;
+}
+
+
+
+
+
 
 .swiper-button-next, .swiper-button-prev {
     color: #ffffff;
@@ -351,14 +401,6 @@ footer {
     left: 20px;
 }
 
-
-.img {
-    width: 25em;
-    height: 28em;
-    object-fit: cover;
-    margin-bottom: 3em;
-    max-width: 100%; /* Imposta una larghezza massima al 100% della larghezza del contenitore */
-}
 
 
 /* Animazioni */
