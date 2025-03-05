@@ -43,31 +43,52 @@
     <!-- Introduzione -->
     <div id="about" class="info">
       <div class="intro">
-        <h1 class="titolo">Claudio Galiano</h1>
-        <h2 class="titolo">Web developer & Graphic Designer</h2>
-        <h2 class="titolo">Based in Italy</h2>
+        <h1 class="titolo">
+          <span class="animated-word" style="animation-delay: 0s">Claudio</span>
+          <span class="animated-word" style="animation-delay: 0.3s"
+            >Galiano</span
+          >
+        </h1>
+        <h2 class="titolo">
+          <span class="animated-word" style="animation-delay: 0.6s">Web</span>
+          <span class="animated-word" style="animation-delay: 0.9s"
+            >developer</span
+          >
+          <span class="animated-word" style="animation-delay: 1.2s">&</span>
+          <span class="animated-word" style="animation-delay: 1.5s"
+            >Graphic</span
+          >
+          <span class="animated-word" style="animation-delay: 1.8s"
+            >Designer</span
+          >
+        </h2>
+        <h2 class="titolo">
+          <span class="animated-word" style="animation-delay: 2.1s">Based</span>
+          <span class="animated-word" style="animation-delay: 2.4s">in</span>
+          <span class="animated-word" style="animation-delay: 2.7s">Italy</span>
+        </h2>
       </div>
       <div class="background"></div>
     </div>
 
     <!-- Profilo -->
-    <div class="profilo">
-      <div class="left-col">
+    <div class="section">
+      <div class="left-col gap-6">
         <div>
-          <p id="bio" class="titoletto upper hidden">Biography</p>
+          <p id="bio" class="titoletto upper pb-3 hidden">Biography</p>
           <p id="bio-text" class="text-profilo hidden">
             Work for money and design for love! I’m Claudio, Designer based in
             Italy.
           </p>
         </div>
         <div>
-          <p id="contact" class="titoletto upper hidden">Contact</p>
+          <p id="contact" class="titoletto upper pb-3 hidden">Contact</p>
           <p id="contact-text" class="text-profilo hidden">
             Monza, Italy hello@mail.com +39 3568 89 86
           </p>
         </div>
         <div>
-          <p id="services" class="titoletto upper hidden">Services</p>
+          <p id="services" class="titoletto upper pb-3 hidden">Services</p>
           <p id="services-text" class="text-profilo hidden">
             Website Design<br />Mobile Application Design<br />Animation
           </p>
@@ -76,9 +97,9 @@
       <div class="foto">
         <img src="assets/img/foto.jpg" alt="Immagine 1" class="img-profilo" />
       </div>
-      <div class="right-col">
+      <div class="right-col gap-6">
         <div>
-          <p id="experience" class="titoletto upper t-right hidden">
+          <p id="experience" class="titoletto upper t-right pb-3 hidden">
             Years of<br />Experience
           </p>
           <p
@@ -90,7 +111,7 @@
           </p>
         </div>
         <div>
-          <p id="satisfaction" class="titoletto upper t-right hidden">
+          <p id="satisfaction" class="titoletto upper t-right pb-3 hidden">
             Customer<br />satisfaction
           </p>
           <p
@@ -102,7 +123,7 @@
           </p>
         </div>
         <div>
-          <p id="projects" class="titoletto upper t-right hidden">
+          <p id="projects" class="titoletto upper t-right pb-3 hidden">
             Projects done
           </p>
           <p
@@ -117,141 +138,149 @@
       <div class="background"></div>
     </div>
 
-    <!-- Carosello -->
-    <section class="projects">
-      <h2 class="titolo">My Latest Projects</h2>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="assets/img/Weather.jpg" alt="Immagine 1" class="img" />
-              <div class="card-desc">
-                <p class="p2">Titolo per immagine 1</p>
-                <p class="p1">Supro Store Online</p>
-              </div>
-            </div>
+    <!-- Education & Experience-->
+    <section class="edu-exp">
+      <h2 id="edu-exp-sect" class="titolo hidden">Education & Experience</h2>
+      <div id="edu-exp-summary" class="edu-section pad-top hidden">
+        <div>
+          <div>
+            <p class="titoletto upper pb-2">2015</p>
+            <p class="text-edu">Bachelor Degree of Design</p>
+            <p class="titoletto pb-3">IED Milano</p>
           </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="assets/img/Weather.jpg" alt="Immagine 2" class="img" />
-              <div class="card-desc">
-                <p class="p2">Titolo per immagine 2</p>
-                <p class="p1">Supro Store Online</p>
-              </div>
-            </div>
+          <div>
+            <p class="titoletto upper pb-2">2016</p>
+            <p class="text-edu">Master Animation Design</p>
+            <p class="titoletto pb-3">IED Milano</p>
           </div>
-          <!-- Aggiungi altre card qui -->
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="assets/img/Weather.jpg" alt="Immagine 2" class="img" />
-              <div class="card-desc">
-                <p class="p2">Titolo per immagine 3</p>
-                <p class="p1">Supro Store Online</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <img src="assets/img/Weather.jpg" alt="Immagine 2" class="img" />
-              <div class="card-desc">
-                <p class="p2">Titolo per immagine 4</p>
-                <p class="p1">Supro Store Online</p>
-              </div>
-            </div>
+          <div>
+            <p class="titoletto upper pb-2">2023</p>
+            <p class="text-edu">Corso Full Stack Developer</p>
+            <p class="titoletto pb-3">Epicode</p>
           </div>
         </div>
-        <!-- Pulsanti di navigazione -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div>
+          <div>
+            <p class="titoletto upper pb-2">2017 - 2022</p>
+            <p class="text-edu">Graphic Designer</p>
+            <p class="titoletto pb-3">Sky</p>
+          </div>
+          <div>
+            <p class="titoletto upper pb-2">2024</p>
+            <p class="text-edu">Consulente IT</p>
+            <p class="titoletto pb-3">Altitudo</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Portofolio -->
-    <div id="portfolio" class="portfolio-section">
-      <div class="portfolio-info">
-        <div>
-          <h1>Portfolio</h1>
-          <p>
-            Let's make something new, different and more meaningful or make
-            thing more visual or conceptual
-          </p>
-        </div>
-
-        <div>
-          <button class="button">Frontend</button>
-          <button class="button">Backend</button>
+    <!-- Carosello -->
+    <section class="projects pb-3">
+      <h2 class="titolo">My Latest Projects</h2>
+      <div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <img
+                  src="assets/img/Weather.jpg"
+                  alt="Immagine 1"
+                  class="img"
+                />
+                <div class="card-desc">
+                  <p class="p2">Titolo per immagine 1</p>
+                  <p class="p1">Supro Store Online</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img
+                  src="assets/img/Weather.jpg"
+                  alt="Immagine 2"
+                  class="img"
+                />
+                <div class="card-desc">
+                  <p class="p2">Titolo per immagine 2</p>
+                  <p class="p1">Supro Store Online</p>
+                </div>
+              </div>
+            </div>
+            <!-- Aggiungi altre card qui -->
+            <div class="swiper-slide">
+              <div class="card">
+                <img
+                  src="assets/img/Weather.jpg"
+                  alt="Immagine 2"
+                  class="img"
+                />
+                <div class="card-desc">
+                  <p class="p2">Titolo per immagine 3</p>
+                  <p class="p1">Supro Store Online</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img
+                  src="assets/img/Weather.jpg"
+                  alt="Immagine 2"
+                  class="img"
+                />
+                <div class="card-desc">
+                  <p class="p2">Titolo per immagine 4</p>
+                  <p class="p1">Supro Store Online</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pulsanti di navigazione -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
-      <div class="image-grid">
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/000/457/141/original/landing-page-template-of-website-design-illustration-concept-isometric-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg"
-          alt="Descrizione dell'immagine 1"
-        />
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/000/457/141/original/landing-page-template-of-website-design-illustration-concept-isometric-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg"
-          alt="Descrizione dell'immagine 2"
-        />
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/000/457/141/original/landing-page-template-of-website-design-illustration-concept-isometric-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg"
-          alt="Descrizione dell'immagine 3"
-        />
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/000/457/141/original/landing-page-template-of-website-design-illustration-concept-isometric-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg"
-          alt="Descrizione dell'immagine 4"
-        />
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/000/457/141/original/landing-page-template-of-website-design-illustration-concept-isometric-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg"
-          alt="Descrizione dell'immagine 5"
-        />
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/000/457/141/original/landing-page-template-of-website-design-illustration-concept-isometric-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg"
-          alt="Descrizione dell'immagine 6"
-        />
-      </div>
-    </div>
+    </section>
 
     <!-- Contatti -->
-    <div id="contatti" class="contact-section">
-      <div class="contact-info">
-        <h1>Contact me</h1>
-        <p style="font-size: small">
-          Let's make something new, different and more meaningful or make thing
-          more visual or conceptual
-        </p>
-        <div class="contact-mine">
-          <!-- <p><i class="fas fa-phone"></i> Call Me +123 456 7890</p> -->
-          <div>
-            <p>Call me</p>
-            <p>329102031</p>
-          </div>
-          <div>
-            <p>Email</p>
-            <p>info@coder.com</p>
-          </div>
-          <div>
-            <p>Address</p>
-            <p>27 Division St., New York, NY10002 USA</p>
+
+    <section class="contatti">
+      <h2 class="titolo">Contact me</h2>
+      <div class="contact-section">
+        <div class="contact-info">
+          <p class="p2 upper pb-2">Describe your project</p>
+          <p class="text-edu">
+            Looking to start a project or you need consultation?<br />Feel free
+            to contact me.
+          </p>
+          <div class="contact-mine">
+            <div>
+              <p class="mail">claudiogal92@gmail.com</p>
+            </div>
           </div>
         </div>
+        <div class="contact-form">
+          <form>
+            <div>
+              <input type="text" name="name" placeholder="Name" />
+              <input type="email" name="email" placeholder="Email" />
+            </div>
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </div>
+    </section>
 
-      <div class="contact-form">
-        <h1>Drop a Line</h1>
-        <form action="/submit_form" method="post">
-          <div>
-            <input type="text" name="name" placeholder="Name" />
-            <input type="email" name="email" placeholder="Email" />
-          </div>
-          <div>
-            <textarea name="message" placeholder="Message" rows="4"></textarea>
-          </div>
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-    </div>
+    <!-- Footer -->
     <footer>
-      <p>Developed with love by Claudio Galiano C 2024</p>
+      <p>Developed with love by Claudio Galiano © <span id="year"></span></p>
     </footer>
+
     <script>
       src = "caro.js";
     </script>
@@ -260,7 +289,7 @@
     <script>
       var swiper = new Swiper(".swiper-container", {
         slidesPerView: 3,
-        spaceBetween: 16,
+        spaceBetween: 50,
         loop: true,
         autoplay: {
           delay: 3000, // 3 secondi

@@ -21,6 +21,27 @@ html, body {
     text-transform: uppercase;
 }
 
+.pad-top {
+    padding-top: 8em;
+}
+
+.pb-1 {
+    padding-bottom: 0.5em;
+}
+
+.pb-2 {
+    padding-bottom: 2em;
+}
+
+.pb-3 {
+    padding-bottom: 3em;
+}
+
+.gap-6 {
+    gap: 6em;
+}
+
+
 /* Navbar */
 nav {
     padding: 50px;
@@ -128,16 +149,17 @@ nav div:last-child {
 
 /* Profilo */
 
-.profilo {
+.section {
     display: flex;
     justify-content: center;
-    padding: 0 50px;
+    padding: 0 50px 70px 50px;
+    border-bottom-width: 1px;
+    border-style: solid;
 }
 
 .titoletto {
     color: #999999;
     font-size: 15px;
-    padding-bottom: 3em;
 }
 
 
@@ -146,7 +168,6 @@ nav div:last-child {
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    gap: 6em;
     width: 100%;
 }
 
@@ -155,7 +176,6 @@ nav div:last-child {
     align-items: flex-end;
     flex-direction: column;
     justify-content: center;
-    gap: 6em;
     width: 100%;
 }
 
@@ -193,7 +213,30 @@ nav div:last-child {
     line-height: 1.5em
 }
 
+/* Education & Experience */
+
+.text-edu {
+    font-size: 1.8em;
+    font-family: 'Amiri';
+    line-height: 1.5em
+}
+
+.edu-exp .titolo {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 1em 0;
+}
+
+.edu-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 50px 70px 50px;
+    border-bottom-width: 1px;
+    border-style: solid;
+}
+
 /* Portfolio */
+
 .portfolio-section {
     padding: 2em 0;
     padding: 5em;
@@ -234,30 +277,35 @@ h1 {
     font-size: 3em;
 }
 
-.contact-section {
+/* Contatti*/
+
+.contatti {
+    border-bottom-width: 1px;
+    border-style: solid;
+}
+  
+.contatti .titolo {
     display: flex;
-    justify-content: space-between;
-    background-color: #19142a;
-    color: #fff;
-    padding: 5em;
+    justify-content: center;
+    margin: 2em 0 1em 0;
 }
   
 .contact-info {
-    width: 48%;
+    width: 45%;
 }
   
 .contact-form {
     width: 48%;
 }
-
+  
 .contact-mine {
-margin-top: 2em;
+    margin-top: 2em;
 }
-
+  
 .contact-mine div:nth-child(2) {
     margin: 2em 0;
 }
-
+  
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -266,43 +314,98 @@ margin-top: 2em;
 .contact-form form div:first-child {
     display: flex;
     justify-content: space-between;
-    margin: 2em 0;
+}
+  
+.contact-form form input[type="text"] {
+    width: calc(50% - 10px); /* Larghezza fissa con margine */
+    height: 2em;
+    margin-right: 10px; /* Margine destro per la spaziatura */
 }
 
-.contact-form form div:nth-child(2) {
-    display: flex;
-}
-  
-.contact-form form input[type="text"],
 .contact-form form input[type="email"] {
-    width: 48%;
+    width: calc(50% - 10px); /* Larghezza fissa con margine */
+    height: 2em;
+    margin-right: 0;
 }
-  
+
 .contact-form form textarea {
-    width: 100%;
-    margin-bottom: 10px;
+    width: calc(100% - 20px); /* Larghezza fissa */
+    margin: 10px 0; /* Margine per separazione */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Disabilita il ridimensionamento */
 }
   
-.contact-form form input[type="submit"] {
-    background-color: red;
-    color: #fff;
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
     border: none;
-    width: 20%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
 }
+
+.contact-form button:hover { 
+    background-color: #999999;
+}
+
+.mail {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+  
+.contact-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5em;
+    align-items: center;
+}
+  
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="email"],
+.contact-form form textarea {
+    font-family: 'Poppins'; /* Cambia il font qui */
+    padding-left: 0.5em;
+}
+
+
+  /* Stili per il placeholder */
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Poppins'; /* Cambia il font qui */
+    color: #888; /* Colore del placeholder */
+}
+
+/* Footer */
 
 footer {
     padding: 5em;
     display: flex;
     justify-content: center;
-    background-color: #2a2344;
 }
 
 /* Carosello */
 
+.projects {
+    border-bottom-width: 1px;
+    border-style: solid;
+}
+
 .projects .titolo {
     display: flex;
     justify-content: center;
-    margin: 1em 0;
+    margin: 2em 0 1em 0;
 }
 
 
@@ -313,6 +416,10 @@ footer {
 .p2 {
     color: #999999;
     font-size: 15px;
+}
+
+.p3 {
+    font-size: 1.2em;
 }
 
 .carousel-item .p2 {
@@ -371,11 +478,6 @@ footer {
     padding-top: 3em;
 }
 
-
-
-
-
-
 .swiper-button-next, .swiper-button-prev {
     color: #ffffff;
     padding: 10px;
@@ -392,7 +494,6 @@ footer {
     color: #000000;
 }
 
-
 .swiper-button-next {
     right: 20px;
 }
@@ -401,17 +502,50 @@ footer {
     left: 20px;
 }
 
+/* Cerchio */
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px dotted black; /* Contorno a tratteggio con pallini */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+  .circle:hover {
+    transform: rotate(360deg); /* Rotazione su hover */
+}
 
 
 /* Animazioni */
 
+@keyframes quickFadeInMove {
+    0% {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animated-word {
+    opacity: 0;
+    display: inline-block;
+    animation: quickFadeInMove 0.5s forwards;
+}
+
 .hidden {
     opacity: 0;
     transform: translateY(100px);
-    transition: all 0.6s ease;
 }
 
 .show {
     opacity: 1;
     transform: translateY(0);
+    transition: all 0.6s ease;
 }
