@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="#">Logo</a>
+      </div>
+      <div class="nav__link">
+        <a href="#about">About me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contatti">Contact me</a>
+      </div>
+    </nav>
+    <div id="about" class="info">
+      <div>
+        <p>Welcome</p>
+        <h1>Claudio Galiano</h1>
+        <h2>Junior full stack developer</h2>
+        <p class="intro">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+          omnis adipisci ipsam quas itaque quibusdam eos animi incidunt?
+          Accusantium hic nulla consectetur asperiores perferendis ut tempora
+          praesentium numquam dignissimos vitae!
+        </p>
+        <button class="button">Download my CV</button>
+      </div>
+      <div class="background">
+        <img src="./assets/img/undraw_absorbed_in_re_ymd6.svg" alt="" />
+      </div>
+    </div>
+
+    <!-- Portofolio -->
+    <div id="portfolio" class="portfolio-section">
+      <div class="portfolio-info">
+        <div>
+          <h1>Portfolio</h1>
+          <p>
+            Let's make something new, different and more meaningful or make
+            thing more visual or conceptual
+          </p>
+        </div>
+
+        <div>
+          <button class="button">Frontend</button>
+          <button class="button">Backend</button>
+        </div>
+      </div>
+      <div class="image-grid">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/000/457/141/original/landing-page-template-of-website-design-illustration-concept-isometric-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg"
+          alt="Descrizione dell'immagine 1"
+        />
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/000/457/141/original/landing-page-template-of-website-design-illustration-concept-isometric-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg"
+          alt="Descrizione dell'immagine 2"
+        />
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/000/457/141/original/landing-page-template-of-website-design-illustration-concept-isometric-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg"
+          alt="Descrizione dell'immagine 3"
+        />
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/000/457/141/original/landing-page-template-of-website-design-illustration-concept-isometric-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg"
+          alt="Descrizione dell'immagine 4"
+        />
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/000/457/141/original/landing-page-template-of-website-design-illustration-concept-isometric-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg"
+          alt="Descrizione dell'immagine 5"
+        />
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/000/457/141/original/landing-page-template-of-website-design-illustration-concept-isometric-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg"
+          alt="Descrizione dell'immagine 6"
+        />
+      </div>
+    </div>
+
+    <!-- Contatti -->
+    <div id="contatti" class="contact-section">
+      <div class="contact-info">
+        <h1>Contact me</h1>
+        <p style="font-size: small">
+          Let's make something new, different and more meaningful or make thing
+          more visual or conceptual
+        </p>
+        <div class="contact-mine">
+          <!-- <p><i class="fas fa-phone"></i> Call Me +123 456 7890</p> -->
+          <div>
+            <p>Call me</p>
+            <p>329102031</p>
+          </div>
+          <div>
+            <p>Email</p>
+            <p>info@coder.com</p>
+          </div>
+          <div>
+            <p>Address</p>
+            <p>27 Division St., New York, NY10002 USA</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h1>Drop a Line</h1>
+        <form action="/submit_form" method="post">
+          <div>
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email" />
+          </div>
+          <div>
+            <textarea name="message" placeholder="Message" rows="4"></textarea>
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>Developed with love by Claudio Galiano C 2024</p>
+    </footer>
+  </body>
+</html>
