@@ -63,3 +63,12 @@ document.addEventListener("DOMContentLoaded", function () {
     requestAnimationFrame(updateCount);
   }
 });
+
+document
+  .querySelector('a[href="#projects-sect"]')
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    document.querySelector("#projects-sect").scrollIntoView({
+      behavior: "smooth",
+    });
+  });

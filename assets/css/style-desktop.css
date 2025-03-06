@@ -6,7 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
-    background-color: #ffffff
+    background-color: #ffffff;
+    height: 100vh;
 }
 
 html, body {
@@ -21,7 +22,15 @@ html, body {
     text-transform: uppercase;
 }
 
-.pad-top {
+.pt-08 {
+    padding-top: 0.8em;
+}
+
+.pt-1 {
+    padding-top: 1em;
+}
+
+.pt-8 {
     padding-top: 8em;
 }
 
@@ -36,6 +45,19 @@ html, body {
 .pb-3 {
     padding-bottom: 3em;
 }
+
+.pb-6 {
+    padding-bottom: 6em;
+}
+
+.pb-8 {
+    padding-bottom: 8em;
+}
+
+.mb-3 {
+    margin-bottom: 3em;
+}
+
 
 .gap-6 {
     gap: 6em;
@@ -124,6 +146,32 @@ nav div:last-child {
     font-size: 1em;
 }
 
+.social {
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    border-radius: 60%;
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social:hover {
+    background-color: #000000;
+}
+
+.svg-fill {
+    fill: #000000;
+    transition: fill 0.3s;
+}
+
+.social:hover .svg-fill {
+    fill: #ffffff;
+}
 
 
 /* Introduzione */
@@ -152,7 +200,8 @@ nav div:last-child {
 .section {
     display: flex;
     justify-content: center;
-    padding: 0 50px 70px 50px;
+    padding: 0 8em 8em 8em;
+    margin: 0 6em;
     border-bottom-width: 1px;
     border-style: solid;
 }
@@ -160,6 +209,14 @@ nav div:last-child {
 .titoletto {
     color: #999999;
     font-size: 15px;
+}
+
+.titoletto-black {
+    font-size: 15px;
+    background-color: black;
+    padding: 0.3em;
+    display: inline-block;
+    color: white;
 }
 
 
@@ -186,6 +243,21 @@ nav div:last-child {
     max-width: 100%;
     object-position: center;
 }
+
+/*
+.img-profilo {
+    width: 70%;
+    height: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    object-position: center;
+    width: 70%;
+    object-position: center;
+    border-radius: 50%;
+    display: block;
+}
+*/
 
 .foto {
     align-content: center;
@@ -221,6 +293,13 @@ nav div:last-child {
     line-height: 1.5em
 }
 
+.edu-exp {
+    padding: 0 8em 8em 8em;
+    margin: 0 6em;
+    border-bottom-width: 1px;
+    border-style: solid;
+}
+
 .edu-exp .titolo {
     display: flex;
     justify-content: center;
@@ -230,9 +309,8 @@ nav div:last-child {
 .edu-section {
     display: flex;
     justify-content: space-evenly;
-    padding: 0 50px 70px 50px;
+    padding: 0 8em 0 8em;
     border-bottom-width: 1px;
-    border-style: solid;
 }
 
 /* Portfolio */
@@ -277,11 +355,118 @@ h1 {
     font-size: 3em;
 }
 
+/* Carosello */
+
+.projects {
+}
+
+.projects .titolo {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 1em 0;
+}
+
+
+.p1 {
+    font-size: 30px;
+}
+
+.p2 {
+    color: #999999;
+    font-size: 15px;
+}
+
+.p3 {
+    font-size: 1.2em;
+}
+
+.carousel-item .p2 {
+    margin-bottom: 1em;
+}
+
+.titolo {
+    font-family: "Amiri", serif;
+    font-size: 60px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative; /* Necessario per posizionare le frecce */
+    padding: 0px 6em;
+    box-sizing: border-box; /* Assicura che padding e border non espandano la larghezza oltre il 100% */
+    overflow: visible; /* Assicura che gli elementi non vengano tagliati */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding-top: 75%; /* Cambia questo valore per regolare le proporzioni */
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.img:hover {
+    transform: scale(1.1); /* Applica lo zoom */
+}
+
+.card-desc {
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    width: 100%;
+    /*background-color: white;*/
+    padding-top: 3em;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000; /* Assicura la sovrapposizione alle altre parti della pagina */
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    color: #000000;
+}
+
+.swiper-button-next {
+    right: 20px;
+}
+
+.swiper-button-prev {
+    left: 20px;
+}
+
 /* Contatti*/
 
 .contatti {
+    border-top-width: 1px;
     border-bottom-width: 1px;
     border-style: solid;
+    margin: 0 6em;
 }
   
 .contatti .titolo {
@@ -352,7 +537,7 @@ h1 {
 }
 
 .contact-form button:hover { 
-    background-color: #999999;
+    background-color: #4b4b4b;
 }
 
 .mail {
@@ -363,7 +548,7 @@ h1 {
 .contact-section {
     display: flex;
     justify-content: space-evenly;
-    padding: 5em;
+    padding: 5em 5em 0 5em;
     align-items: center;
 }
   
@@ -387,121 +572,6 @@ textarea::placeholder {
     color: #888; /* Colore del placeholder */
 }
 
-/* Footer */
-
-footer {
-    padding: 5em;
-    display: flex;
-    justify-content: center;
-}
-
-/* Carosello */
-
-.projects {
-    border-bottom-width: 1px;
-    border-style: solid;
-}
-
-.projects .titolo {
-    display: flex;
-    justify-content: center;
-    margin: 2em 0 1em 0;
-}
-
-
-.p1 {
-    font-size: 30px;
-}
-
-.p2 {
-    color: #999999;
-    font-size: 15px;
-}
-
-.p3 {
-    font-size: 1.2em;
-}
-
-.carousel-item .p2 {
-    margin-bottom: 1em;
-}
-
-.titolo {
-    font-family: "Amiri", serif;
-    font-size: 60px;
-}
-
-.swiper-container {
-    width: 100%;
-    height: 100%;
-    position: relative; /* Necessario per posizionare le frecce */
-    padding: 0 20px;
-    box-sizing: border-box; /* Assicura che padding e border non espandano la larghezza oltre il 100% */
-    overflow: visible; /* Assicura che gli elementi non vengano tagliati */
-}
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.card {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    padding-top: 75%; /* Cambia questo valore per regolare le proporzioni */
-}
-
-.img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s ease;
-    object-fit: cover;
-}
-
-.img:hover {
-    transform: scale(1.1); /* Applica lo zoom */
-}
-
-.card-desc {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    padding-top: 3em;
-}
-
-.swiper-button-next, .swiper-button-prev {
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 20px;
-    transition: transform 0.3s ease;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1000; /* Assicura la sovrapposizione alle altre parti della pagina */
-}
-
-.swiper-button-next:hover, .swiper-button-prev:hover {
-    color: #000000;
-}
-
-.swiper-button-next {
-    right: 20px;
-}
-
-.swiper-button-prev {
-    left: 20px;
-}
-
 /* Cerchio */
 
 .circle {
@@ -519,6 +589,13 @@ footer {
     transform: rotate(360deg); /* Rotazione su hover */
 }
 
+/* Footer */
+
+footer {
+    position: relative;
+    text-align: center;
+    padding: 6em 0;
+}
 
 /* Animazioni */
 
@@ -549,3 +626,28 @@ footer {
     transform: translateY(0);
     transition: all 0.6s ease;
 }
+
+/* media query */
+
+/* Default: Extra-small devices such as small phones (less than 640px) */
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+
+}
+

@@ -1,0 +1,686 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+html, body {
+    overflow-x: hidden; /* Nasconde lo slider orizzontale */
+    overflow-y: auto;   /* Mantiene lo scorrimento verticale automatico */
+    margin: 0;          /* Rimuove eventuali margini di default */
+    padding: 0;         /* Rimuove eventuali padding di default */
+}
+
+
+.upper {
+    text-transform: uppercase;
+}
+
+.pt-08 {
+    padding-top: 0.8em;
+}
+
+.pt-1 {
+    padding-top: 1em;
+}
+
+.pt-8 {
+    padding-top: 8em;
+}
+
+.pb-1 {
+    padding-bottom: 0.5em;
+}
+
+.pb-2 {
+    padding-bottom: 2em;
+}
+
+.pb-3 {
+    padding-bottom: 3em;
+}
+
+.pb-6 {
+    padding-bottom: 6em;
+}
+
+.pb-8 {
+    padding-bottom: 8em;
+}
+
+.mb-3 {
+    margin-bottom: 3em;
+}
+
+/* Navbar */
+
+/* Stili per il mobile */
+
+nav {
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .logo {
+    order: -1; /* Assicura che il logo sia sempre il primo elemento */
+    margin-bottom: 20px;
+}
+
+.nav__link {
+    gap: 2em;
+    margin-bottom: 20px;
+}
+
+nav .social-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+nav {
+    padding: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.nav__link li {
+    position: relative;
+}
+
+.nav__link a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s;
+}
+
+.nav__link a {
+    display: inline-block; /* Aggiungi questa regola */
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s;
+}
+
+.nav__link a:hover {
+    transform: translateY(-5px);
+}
+
+.nav__link a:hover::after {
+    content: '•';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1em;
+    font-size: 1em;
+}
+
+nav .logo,
+nav .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .social-icons {
+    gap: 23px;
+}
+
+.social {
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    border-radius: 60%;
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social:hover {
+    background-color: #000000;
+}
+
+.svg-fill {
+    fill: #000000;
+    transition: fill 0.3s;
+}
+
+.social:hover .svg-fill {
+    fill: #ffffff;
+}
+
+
+/* Introduzione */
+
+.info {
+    padding: 5em;
+    /* background-image: url("../img/undraw_absorbed_in_re_ymd6.svg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+}
+
+.intro .titolo {
+    font-size: 2em;
+}
+
+
+/* Profilo */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 0 8em 8em 8em; DESKTOP */
+    padding-bottom: 8em;
+    /* margin: 0 6em; DESKTOP */
+    margin: 0 5em;
+    border-bottom-width: 1px;
+    border-style: solid;   
+}
+
+.titoletto {
+    color: #999999;
+    font-size: 15px;
+}
+
+.titoletto-black {
+    font-size: 15px;
+    background-color: black;
+    padding: 0.3em;
+    display: inline-block;
+    color: white;
+}
+
+
+.left-col {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /* gap: 6em; DESKTOP */
+    gap: 4em;
+}
+
+.right-col {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5em;
+    /* gap: 6em; DESKTOP */
+    gap: 4em;
+}
+
+/* DEKSTOP
+.img-profilo {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}*/
+
+.img-profilo {
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    object-position: center;
+}
+    
+/* DEKSTOP
+.img-profilo {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    object-position: center;
+}*/
+
+.foto {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 35em;
+    margin-bottom: 5em;
+}
+
+/* DEKSTOP
+.foto {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    width: 60%;
+}*/
+
+.t-big {
+    font-size: 80px;
+    font-family: "Amiri", "Amiri Placeholder", serif;
+    font-weight: 400;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.text-profilo {
+    font-family: 'Amiri';
+    font-size: 24px;
+    line-height: 1.5em
+}
+
+/* Education & Experience */
+
+.text-edu {
+    font-size: 1.8em;
+    font-family: 'Amiri';
+    line-height: 1.5em
+}
+
+.edu-exp {
+    /* padding: 0 8em 8em 8em; DESKTOP */
+    padding-bottom: 8em;
+    /* margin: 0 6em; DESKTOP */
+    margin: 0 5em;
+    border-bottom-width: 1px;
+    border-style: solid;
+}
+
+.edu-exp .titolo {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 1em 0;
+}
+
+.edu-section {
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row; DESKTOP */
+    justify-content: space-evenly;
+    padding-top: 2em;
+    /* padding: 0 8em 8em 8em; DESKTOP */
+    border-bottom-width: 1px;
+}
+
+.edu-summary {
+    padding-bottom: 5em;
+}
+
+/* Portfolio */
+
+.portfolio-section {
+    padding: 2em 0;
+    padding: 5em;
+}
+
+.portfolio-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-info div:first-child {
+    width: 30%;
+}
+
+.button {
+    padding: 0.5em 2em;
+    color: white;
+    background-color: #d6223b;
+    border: none;
+    font-family: 'Comfortaa', sans-serif;
+}
+  
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 10px;
+    margin-top: 2em;
+}
+  
+.image-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+/* Carosello */
+
+.projects {
+}
+
+.projects .titolo {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 1em 0;
+}
+
+
+.p1 {
+    font-size: 30px;
+}
+
+.p2 {
+    color: #999999;
+    font-size: 15px;
+}
+
+.p3 {
+    font-size: 1.2em;
+}
+
+.carousel-item .p2 {
+    margin-bottom: 1em;
+}
+
+.titolo {
+    font-family: "Amiri", serif;
+    font-size: 60px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative; /* Necessario per posizionare le frecce */
+    padding: 0px 6em;
+    box-sizing: border-box; /* Assicura che padding e border non espandano la larghezza oltre il 100% */
+    overflow: visible; /* Assicura che gli elementi non vengano tagliati */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding-top: 75%; /* Cambia questo valore per regolare le proporzioni */
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.img:hover {
+    transform: scale(1.1); /* Applica lo zoom */
+}
+
+.card-desc {
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    width: 100%;
+    /*background-color: white;*/
+    padding-top: 3em;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000; /* Assicura la sovrapposizione alle altre parti della pagina */
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    color: #000000;
+}
+
+.swiper-button-next {
+    right: 20px;
+}
+
+.swiper-button-prev {
+    left: 20px;
+}
+
+/* Contatti*/
+
+.contatti {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    /* margin: 0 6em; DESKTOP */
+    margin: 0 5em;
+}
+  
+.contatti .titolo {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 1em 0;
+}
+  
+.contact-info {
+    /* width: 45%; DESKTOP */
+    width: 100%;
+    padding-bottom: 4em; /* padding-bottom: 0; DESKTOP */
+}
+  
+.contact-form {
+    /* width: 45%; DESKTOP */
+    width: 100%;
+}
+  
+.contact-mine {
+    margin-top: 2em;
+}
+  
+.contact-mine div:nth-child(2) {
+    margin: 2em 0;
+}
+  
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.contact-form form div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.contact-form form input[type="text"] {
+    width: calc(50% - 10px); /* Larghezza fissa con margine */
+    height: 2em;
+    margin-right: 10px; /* Margine destro per la spaziatura */
+}
+
+.contact-form form input[type="email"] {
+    width: calc(50% - 10px); /* Larghezza fissa con margine */
+    height: 2em;
+    margin-right: 0;
+}
+
+.contact-form form textarea {
+    width: calc(100% - 20px); /* Larghezza fissa */
+    margin: 10px 0; /* Margine per separazione */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Disabilita il ridimensionamento */
+}
+  
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover { 
+    background-color: #4b4b4b;
+}
+
+.mail {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+  
+.contact-section {
+    display: flex;
+    /* flex-direction: row; DESKTOP */
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* padding: 5em 5em 0 5em; DESKTOP */
+    align-items: center;
+}
+  
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="email"],
+.contact-form form textarea {
+    font-family: 'Poppins'; /* Cambia il font qui */
+    padding-left: 0.5em;
+}
+
+
+  /* Stili per il placeholder */
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Poppins'; /* Cambia il font qui */
+    color: #888; /* Colore del placeholder */
+}
+
+/* Cerchio */
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px dotted black; /* Contorno a tratteggio con pallini */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+  .circle:hover {
+    transform: rotate(360deg); /* Rotazione su hover */
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    text-align: center;
+    padding: 6em 0;
+}
+
+/* Animazioni */
+
+@keyframes quickFadeInMove {
+    0% {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animated-word {
+    opacity: 0;
+    display: inline-block;
+    animation: quickFadeInMove 0.5s forwards;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease;
+}
+
+/* media query */
+
+/* Default: Extra-small devices such as small phones (less than 640px) */
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+
+}
+
