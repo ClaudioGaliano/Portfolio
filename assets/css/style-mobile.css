@@ -56,10 +56,6 @@ html, body {
     padding-bottom: 6em;
 }
 
-.pb-8 {
-    padding-bottom: 8em;
-}
-
 .mb-3 {
     margin-bottom: 3em;
 }
@@ -193,6 +189,10 @@ nav .social-icons {
     text-align: center;
 }
 
+.titolo {
+    font-size: 3em;
+}
+
 .intro .titolo {
     font-size: 2em;
 }
@@ -205,9 +205,9 @@ nav .social-icons {
     flex-direction: column;
     justify-content: center;
     /* padding: 0 8em 8em 8em; DESKTOP */
-    padding-bottom: 8em;
+    padding-bottom: 7em;
     /* margin: 0 6em; DESKTOP */
-    margin: 0 4em;
+    margin: 0 3em;
     border-bottom-width: 1px;
     border-style: solid;   
 }
@@ -321,9 +321,9 @@ nav .social-icons {
 
 .edu-exp {
     /* padding: 0 8em 8em 8em; DESKTOP */
-    padding-bottom: 8em;
+    padding-bottom: 7em;
     /* margin: 0 6em; DESKTOP */
-    margin: 0 4em;
+    margin: 0 3em;
     border-bottom-width: 1px;
     border-style: solid;
 }
@@ -365,14 +365,6 @@ nav .social-icons {
 .portfolio-info div:first-child {
     width: 30%;
 }
-
-.button {
-    padding: 0.5em 2em;
-    color: white;
-    background-color: #d6223b;
-    border: none;
-    font-family: 'Comfortaa', sans-serif;
-}
   
 .image-grid {
     display: grid;
@@ -380,7 +372,7 @@ nav .social-icons {
     gap: 20px 10px;
     margin-top: 2em;
 }
-  
+
 .image-grid img {
     width: 100%;
     height: auto;
@@ -394,6 +386,8 @@ h1 {
 /* Carosello */
 
 .projects {
+    /* padding-bottom: 7em; DESKTOP */
+    padding-bottom: 7em;
 }
 
 .projects .titolo {
@@ -424,7 +418,6 @@ h1 {
 
 .titolo {
     font-family: "Amiri", serif;
-    font-size: 60px;
 }
 
 .swiper-container {
@@ -476,7 +469,6 @@ h1 {
 }
 
 .swiper-button-next, .swiper-button-prev {
-    color: #ffffff;
     padding: 10px;
     border-radius: 50%;
     font-size: 20px;
@@ -485,6 +477,14 @@ h1 {
     top: 50%;
     transform: translateY(-50%);
     z-index: 1000; /* Assicura la sovrapposizione alle altre parti della pagina */
+}
+
+:root {
+    --swiper-navigation-color: #000000;
+}
+
+.swiper-button-prev:focus, .swiper-button-next:focus {
+    outline: none;
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
@@ -506,6 +506,8 @@ h1 {
     border-bottom-width: 1px;
     border-style: solid;
     /* margin: 0 6em; DESKTOP */
+    /* padding-bottom: 8em; DESKTOP */
+    padding-bottom: 7em;
     margin: 0 1em;
 }
   
