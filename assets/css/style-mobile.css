@@ -17,6 +17,12 @@ html, body {
     padding: 0;         /* Rimuove eventuali padding di default */
 }
 
+/*
+#ampersand-span {
+    display: block;
+    padding: 0.2em 0;
+}
+*/
 
 .upper {
     text-transform: uppercase;
@@ -69,12 +75,7 @@ nav {
 
 nav .logo {
     order: -1; /* Assicura che il logo sia sempre il primo elemento */
-    margin-bottom: 20px;
-}
-
-.nav__link {
-    gap: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 3em;
 }
 
 nav .social-icons {
@@ -84,7 +85,8 @@ nav .social-icons {
 }
 
 nav {
-    padding: 4em;
+    /* padding: 4em; DESKTOP */
+    padding: 2em 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,7 +101,8 @@ nav {
     display: flex;
     list-style-type: none;
     flex-direction: row;
-    gap: 50px;
+    gap: 2em;
+    margin-bottom: 3em;
 }
 
 .nav__link li {
@@ -175,7 +178,8 @@ nav .social-icons {
 /* Introduzione */
 
 .info {
-    padding: 5em;
+    /* padding: 5em; DESKTOP */
+    padding: 2em 2em;
     /* background-image: url("../img/undraw_absorbed_in_re_ymd6.svg");
     background-repeat: no-repeat;
     background-size: cover; */
@@ -184,7 +188,8 @@ nav .social-icons {
 .intro {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    /* gap: 1em; DESKTOP */
+    gap: 1.5em;
     text-align: center;
 }
 
@@ -202,7 +207,7 @@ nav .social-icons {
     /* padding: 0 8em 8em 8em; DESKTOP */
     padding-bottom: 8em;
     /* margin: 0 6em; DESKTOP */
-    margin: 0 5em;
+    margin: 0 4em;
     border-bottom-width: 1px;
     border-style: solid;   
 }
@@ -210,6 +215,8 @@ nav .social-icons {
 .titoletto {
     color: #999999;
     font-size: 15px;
+    /* padding-bottom: 3em; DESKTOP */
+    padding-bottom: 2em;
 }
 
 .titoletto-black {
@@ -274,7 +281,8 @@ nav .social-icons {
     align-items: center;
     width: 100%;
     height: 35em;
-    margin-bottom: 5em;
+    /* margin: 0 0 5em 0; DESKTOP */
+    margin: 2em 0 5em 0;
 }
 
 /* DEKSTOP
@@ -315,7 +323,7 @@ nav .social-icons {
     /* padding: 0 8em 8em 8em; DESKTOP */
     padding-bottom: 8em;
     /* margin: 0 6em; DESKTOP */
-    margin: 0 5em;
+    margin: 0 4em;
     border-bottom-width: 1px;
     border-style: solid;
 }
@@ -323,6 +331,7 @@ nav .social-icons {
 .edu-exp .titolo {
     display: flex;
     justify-content: center;
+    text-align: center;
     margin: 2em 0 1em 0;
 }
 
@@ -390,7 +399,9 @@ h1 {
 .projects .titolo {
     display: flex;
     justify-content: center;
-    margin: 2em 0 1em 0;
+    text-align: center;
+    /* margin: 2em 0 1em 0; DESKTOP */
+    margin: 2em 0.5em 1em 0.5em;
 }
 
 
@@ -419,8 +430,9 @@ h1 {
 .swiper-container {
     width: 100%;
     height: 100%;
-    position: relative; /* Necessario per posizionare le frecce */
-    padding: 0px 6em;
+    /* padding: 0px 6em; DESKTOP */
+    position: relative;
+    padding: 0px 2em;
     box-sizing: border-box; /* Assicura che padding e border non espandano la larghezza oltre il 100% */
     overflow: visible; /* Assicura che gli elementi non vengano tagliati */
 }
@@ -494,7 +506,7 @@ h1 {
     border-bottom-width: 1px;
     border-style: solid;
     /* margin: 0 6em; DESKTOP */
-    margin: 0 5em;
+    margin: 0 1em;
 }
   
 .contatti .titolo {
@@ -507,6 +519,8 @@ h1 {
     /* width: 45%; DESKTOP */
     width: 100%;
     padding-bottom: 4em; /* padding-bottom: 0; DESKTOP */
+    /* text-align: left; DESKTOP */
+    text-align: center;
 }
   
 .contact-form {
@@ -684,3 +698,22 @@ footer {
 
 }
 
+/*
+@media (min-width: 769px) {
+    #ampersand-span {
+      display: inline;
+      padding: 0;
+    }
+}
+*/
+
+#year {
+    display: inline;
+}
+
+@media (max-width: 480px) {
+    #year {
+      display: block;
+      padding-top: 1em;
+    }
+}

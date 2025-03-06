@@ -82,7 +82,12 @@
           <span class="animated-word" style="animation-delay: 0.9s"
             >developer</span
           >
-          <span class="animated-word" style="animation-delay: 1.2s">&</span>
+          <span
+            class="animated-word"
+            style="animation-delay: 1.2s"
+            id="ampersand-span"
+            >&</span
+          >
           <span class="animated-word" style="animation-delay: 1.5s"
             >Graphic</span
           >
@@ -90,6 +95,7 @@
             >Designer</span
           >
         </h2>
+
         <h2 class="titolo">
           <span class="animated-word" style="animation-delay: 2.1s">Based</span>
           <span class="animated-word" style="animation-delay: 2.4s">in</span>
@@ -103,20 +109,20 @@
     <div class="section">
       <div class="left-col">
         <div>
-          <p id="bio" class="titoletto upper pb-3 hidden">Biography</p>
+          <p id="bio" class="titoletto upper hidden">Biography</p>
           <p id="bio-text" class="text-profilo hidden">
             Work for money and design for love! I’m Claudio, Designer based in
             Italy.
           </p>
         </div>
         <div>
-          <p id="contact" class="titoletto upper pb-3 hidden">Contact</p>
+          <p id="contact" class="titoletto upper hidden">Contact</p>
           <p id="contact-text" class="text-profilo hidden">
             Monza, Italy hello@mail.com +39 3568 89 86
           </p>
         </div>
         <div>
-          <p id="services" class="titoletto upper pb-3 hidden">Services</p>
+          <p id="services" class="titoletto upper hidden">Services</p>
           <p id="services-text" class="text-profilo hidden">
             Website Design<br />Mobile Application Design<br />Animation
           </p>
@@ -127,7 +133,7 @@
       </div>
       <div class="right-col">
         <div>
-          <p id="experience" class="titoletto upper t-right pb-3 hidden">
+          <p id="experience" class="titoletto upper t-right hidden">
             Years of<br />Experience
           </p>
           <p
@@ -139,7 +145,7 @@
           </p>
         </div>
         <div>
-          <p id="satisfaction" class="titoletto upper t-right pb-3 hidden">
+          <p id="satisfaction" class="titoletto upper t-right hidden">
             Customer<br />satisfaction
           </p>
           <p
@@ -151,7 +157,7 @@
           </p>
         </div>
         <div>
-          <p id="projects" class="titoletto upper t-right pb-3 hidden">
+          <p id="projects" class="titoletto upper t-right hidden">
             Projects done
           </p>
           <p
@@ -306,7 +312,7 @@
     <!-- Footer -->
     <footer>
       <p id="footer-text" class="hidden">
-        Developed with love by Claudio Galiano © <span id="year"></span>
+        Developed with love by Claudio Galiano <span id="year"></span>
       </p>
     </footer>
     <script>
@@ -316,7 +322,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 100,
         loop: true,
         navigation: {
