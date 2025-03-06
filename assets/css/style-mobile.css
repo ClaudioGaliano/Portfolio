@@ -425,7 +425,7 @@ h1 {
     height: 100%;
     /* padding: 0px 6em; DESKTOP */
     position: relative;
-    padding: 0px 2em;
+    padding: 0px 4em;
     box-sizing: border-box; /* Assicura che padding e border non espandano la larghezza oltre il 100% */
     overflow: visible; /* Assicura che gli elementi non vengano tagliati */
 }
@@ -481,6 +481,7 @@ h1 {
 
 :root {
     --swiper-navigation-color: #000000;
+    --swiper-navigation-top-offset: 45%;
 }
 
 .swiper-button-prev:focus, .swiper-button-next:focus {
