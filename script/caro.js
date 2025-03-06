@@ -72,3 +72,27 @@ document
       behavior: "smooth",
     });
   });
+
+var init = false;
+var swiper;
+function swiperMode() {
+  if (window.innerWidth <= 768) {
+    if (!init) {
+      init = true;
+      swiper = new Swiper(".swiper-container", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 32,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    }
+  } else if (init) {
+    swiper.destroy();
+    init = false;
+  }
+}
+swiperMode();
+window.addEventListener("resize", swiperMode);
