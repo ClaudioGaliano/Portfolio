@@ -59,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
         requestAnimationFrame(updateCount);
       }
     }
-
     requestAnimationFrame(updateCount);
   }
 });
