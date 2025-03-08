@@ -78,6 +78,10 @@ nav {
     width: 15em;
 }
 
+.logo2 {
+    height: 6em;
+}
+
 nav .logo {
     order: -1; /* Assicura che il logo sia sempre il primo elemento */
     /* margin-bottom: 3em; DEKSTOP */
